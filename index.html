@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Money Gained</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f6fa;
+      color: #333;
+    }
+    header {
+      background-color: #1a237e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #3949ab;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 5px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background-color: #303f9f;
+      border-radius: 5px;
+    }
+    .container {
+      padding: 20px;
+    }
+    .balance-box, .wallet-box, .game-box, .login-box {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    .game-list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .game-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      width: 180px;
+      margin: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    button {
+      padding: 10px 15px;
+      background-color: #1a237e;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    input[type=text], input[type=email] {
+      padding: 10px;
+      width: 80%;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #eee;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Money Gained</h1>
+    <p>Play games, refer friends, and earn rewards!</p>
+  </header>
+
+  <nav>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#games">Games</a>
+    <a href="#wallet">Wallet</a>
+    <a href="#login">Login</a>
+  </nav>
+
+  <div class="container" id="dashboard">
+    <div class="balance-box">
+      <h2>Your Balance: $0.00</h2>
+      <p>Referral Link:</p>
+      <input type="text" value="https://moneygained.com/ref123" readonly />
+    </div>
+  </div>
+
+  <div class="container" id="games">
+    <div class="game-box">
+      <h2>Games to Play</h2>
+      <div class="game-list">
+        <div class="game-card">
+          <h3>Dice Roll</h3>
+          <p>Roll to win up to $1!</p>
+          <button onclick="alert('You rolled and won $0.50!')">Play</button>
+        </div>
+        <div class="game-card">
+          <h3>Slot Machine</h3>
+          <p>Match symbols to earn!</p>
+          <button onclick="alert('You hit the jackpot!')">Spin</button>
+        </div>
+        <div class="game-card">
+          <h3>Card Pick</h3>
+          <p>Pick a card to reveal a prize</p>
+          <button onclick="alert('You picked a lucky card and won $0.75!')">Pick</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="wallet">
+    <div class="wallet-box">
+      <h2>Your Wallet</h2>
+      <p>Total Earned: $0.00</p>
+      <button onclick="alert('Withdrawal Requested!')">Withdraw</button>
+    </div>
+  </div>
+
+  <div class="container" id="login">
+    <div class="login-box">
+      <h2>Login to Money Gained</h2>
+      <input type="text" placeholder="Phone number or Email" />
+      <br />
+      <button onclick="alert('Logged in successfully!')">Login</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Money Gained. All rights reserved.
+  </footer>
+</body>
+</html>
